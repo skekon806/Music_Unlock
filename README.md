@@ -38,26 +38,6 @@ move "%SRC_DIR%\*.flac" "%DEST_DIR%\" >nul 2>&1
 move "%SRC_DIR%\*.ogg" "%DEST_DIR%\" >nul 2>&1
 ```
 
-## exiftool文件管理
-```
-/path/to/your/music/folder
-└── Taylor Swift
-    ├── evermore   
-    │   └── champagne problems.flac
-    │   └── closure.flac
-    │   └── ...
-    └── folklore (deluxe version)
-    │   └── august.flac
-    │   └── betty.flac
-    │   └── ...
-```
-```bat
-exiftool ^
-  -ext flac ^
-  -r ^
-  "-Directory</path/to/your/music/folder/$Artist/$Album" ^
-  "-Filename<$Title.flac" ^
-  -overwrite_original ^
-  "/path/to/your/music/folder"
-pause
-```
+## Foobar2000管理
+
+`ctrl+A`>file operations>move to >%album artist%/%album%/%title%
