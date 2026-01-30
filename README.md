@@ -40,15 +40,25 @@ move "%SRC_DIR%\*.ogg" "%DEST_DIR%\" >nul 2>&1
 
 ## exiftool文件管理
 /path/to/your/music/folder
+
 └── Taylor Swift
+
     ├── evermore 
+    
     │   └── champagne problems.flac
+    
     │   └── closure.flac
+    
     │   └── ...
+    
     └── folklore (deluxe version)
+    
     │   └── august.flac
+    
     │   └── betty.flac
+    
     │   └── ...
+    
 ```bat
 exiftool ^
   -ext flac ^
